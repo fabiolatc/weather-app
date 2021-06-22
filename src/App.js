@@ -18,7 +18,7 @@ export default function App() {
     axios.get(url).then(cityTemperature);
     event.preventDefault();
     function cityTemperature(response) {
-      changeText(`${city}`);
+    
       changeTemperaturetext(
         `Temperature: ${Math.round(response.data.main.temp)}°C`
       );
